@@ -228,7 +228,7 @@ PUT("https://data.somervillema.gov/resource/xs7t-pxkc.json",
 # #### The initial Data dump ####
 # # QSend API undocumented method to get all data
 # 
-# api <- "https://somervillema.qscend.com/qalert/api/v1/requests/dump/?start=7%2F1%2F2015&key=5c2b987d13cc414cb26f956cf31fbffc8ca62dc37d1a4f6bba3cc74398162db5"
+# api <- "https://somervillema.qscend.com/qalert/api/v1/requests/dump/?start=7%2F1%2F2015&key="
 # 
 # d <- fromJSON(api)
 # 
