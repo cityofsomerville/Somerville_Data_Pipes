@@ -13,29 +13,29 @@ library(data.table)
 
 qol <- fread("https://data.somervillema.gov/api/views/n5sm-r6zx/rows.csv?accessType=DOWNLOAD")
 
-write.csv(qol,'//fileshare1/Departments2/Somerstat Data/Police/daily/QualityOfLife.csv')
-write.csv(qol,'//fileshare1/Departments2/Somerstat Data/Police/daily/data_pipeline_pls_dont_use/QualityOfLife.csv')
+write.csv(qol,'//cos-chb-share1/Somerstat Data/Police/daily/QualityOfLife.csv')
+write.csv(qol,'//cos-chb-share1/Somerstat Data/Police/daily/data_pipeline_pls_dont_use/QualityOfLife.csv')
 
 
 
 ci <- fread("https://data.somervillema.gov/api/views/4jey-jqxb/rows.csv?accessType=DOWNLOAD")
 
-write.csv(ci, "//fileshare1/Departments2/Somerstat Data/Police/daily/CriminalIncidents.csv")
-write.csv(ci,'//fileshare1/Departments2/Somerstat Data/Police/daily/data_pipeline_pls_dont_use/CriminalIncidents.csv')
+write.csv(ci, "//cos-chb-share1/Somerstat Data/Police/daily/CriminalIncidents.csv")
+write.csv(ci,'//cos-chb-share1/Somerstat Data/Police/daily/data_pipeline_pls_dont_use/CriminalIncidents.csv')
 
 
 
 mvc <- fread("https://data.somervillema.gov/api/views/3md9-rv67/rows.csv?accessType=DOWNLOAD")
 
-write.csv(mvc,'//fileshare1/Departments2/Somerstat Data/Police/daily/MotorVehicleCitations.csv')
-write.csv(mvc,'//fileshare1/Departments2/Somerstat Data/Police/daily/data_pipeline_pls_dont_use/MotorVehicleCitations.csv')
+write.csv(mvc,'//cos-chb-share1/Somerstat Data/Police/daily/MotorVehicleCitations.csv')
+write.csv(mvc,'//cos-chb-share1/Somerstat Data/Police/daily/data_pipeline_pls_dont_use/MotorVehicleCitations.csv')
 
 
 
 te <- fread("https://data.somervillema.gov/api/views/j2bq-38ev/rows.csv?accessType=DOWNLOAD")
 
-write.csv(te, "//fileshare1/Departments2/Somerstat Data/Police/daily/TrafficEnforcement.csv")
-write.csv(te,'//fileshare1/Departments2/Somerstat Data/Police/daily/data_pipeline_pls_dont_use/TrafficEnforcement.csv')
+write.csv(te, "//cos-chb-share1/Somerstat Data/Police/daily/TrafficEnforcement.csv")
+write.csv(te,'//cos-chb-share1/Somerstat Data/Police/daily/data_pipeline_pls_dont_use/TrafficEnforcement.csv')
 
 
 
