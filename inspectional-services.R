@@ -75,9 +75,9 @@ d$PermitTypeDetail <- ifelse(substr(d$Permit., 1, 2) == "B1", "Building",
 
 
 # Write it to the local and P: drives
-write.csv(d, "//fileshare1/Departments2/Somerstat Data/Inspectional_Services/data/Daily_Permits.csv")
+write.csv(d, "//cos-chb-share1/Somerstat Data/Inspectional_Services/data/Daily_Permits.csv")
 
-write.csv(d, "//fileshare1/Departments2/Somerstat Data/Inspectional_Services/data/data_pipeline_pls_dont_use/Daily_Permits.csv")
+write.csv(d, "//cos-chb-share1/Somerstat Data/Inspectional_Services/data/data_pipeline_pls_dont_use/Daily_Permits.csv")
 
 
 # Remove everything else
@@ -93,13 +93,13 @@ forSocrata <- d %>% select(-OwnerName)
 
 
 # Write it to the local and P: drives
-write.csv(forSocrata, "//fileshare1/Departments2/Somerstat Data/Inspectional_Services/data/ISD_Building_Permit_Daily_Applications_Socrata.csv", row.names = FALSE)
+write.csv(forSocrata, "//cos-chb-share1/Somerstat Data/Inspectional_Services/data/ISD_Building_Permit_Daily_Applications_Socrata.csv", row.names = FALSE)
 
 
 
 # Upload through Socrata API
 PUT("https://data.somervillema.gov/resource/q3yh-mp87.json",
-    body = upload_file("//fileshare1/Departments2/Somerstat Data/Inspectional_Services/data/ISD_Building_Permit_Daily_Applications_Socrata.csv"),
+    body = upload_file("//cos-chb-share1/Somerstat Data/Inspectional_Services/data/ISD_Building_Permit_Daily_Applications_Socrata.csv"),
     authenticate(Socrata_username, Socrata_password), 
     add_headers("X-App-Token" = Socrata_token,
                 "Content-Type" = "text/csv"))
