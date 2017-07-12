@@ -43,8 +43,8 @@ time <- Sys.time()
 
 ga.df$pageTitle <- gsub("| City of Somerville Website", "", ga.df$pageTitle)
 
-write.csv(ga.df, "//fileshare1/Departments2/Somerstat Data/Website_Analytics/LastTwentyFour.csv")
-write.csv(ga.df, "//fileshare1/Departments2/Somerstat Data/Website_Analytics/data_pipeline_pls_dont_use/LastTwentyFour.csv")
+write.csv(ga.df, "//cos-chb-share1/Somerstat Data/Website_Analytics/LastTwentyFour.csv")
+write.csv(ga.df, "//cos-chb-share1/Somerstat Data/Website_Analytics/data_pipeline_pls_dont_use/LastTwentyFour.csv")
 
 
 
